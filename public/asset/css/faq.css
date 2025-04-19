@@ -1,0 +1,42 @@
+.colapse-head-area2{
+  margin:0% !important;
+  padding: 30px 0px;
+}
+
+.colapse-head-area2 .custom-card{
+  border-radius: 0% !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.colapse-head-area2 .custom-card .header-card-area{
+  border-radius: 0% !important;
+  border:none !important;
+  background: transparent;
+  background-color:#e4672f; 
+  padding:4px !important;
+ 
+}
+
+
+.colapse-head-area2 .custom-card .header-card-area .head-btn{
+  text-decoration: none !important;
+  color:#fff;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.colapse-head-area2 .custom-card-body{
+  background-color: #fff;
+} 
+
+.colapse-head-area2 .custom-card-body ol{
+ margin:5px 5px 5px 15px;
+}
+
+.colapse-head-area2 .custom-card-body ol li{
+ font-size: 15px;
+ color:#666666;
+ padding:1px 0px;
+}

@@ -1,0 +1,108 @@
+.registerbox{
+	background-color: #EFF0F5;
+}
+.newregisterform{
+	background-color: #fff;
+	padding: 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.newregisterform .form-group label{
+	color: #424242;
+	font-size: 12px;
+}
+.newregisterform .form-group input[type="text"],
+.newregisterform .form-group input[type="email"],
+.newregisterform .form-group input[type="password"],
+.newregisterform .form-group input[type="number"]{
+	height: 40px;
+	border: 1px solid #ddd;
+	font-size: 13px;
+	border-radius: 0px;
+	color: #777;
+}
+.newregisterform .form-group input[type="date"]{
+
+}
+.newregisterform .form-group button{
+	background: #F57224;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 14px 5px;
+	width: 100%;
+	border: 0px;
+	cursor: pointer;
+	font-size: 14px;
+}
+.newregisterform .form-group .input-group-append button{
+	height: 40px;
+	padding: 5px;
+}
+.newregisterform .form-group > a{
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	padding: 14px 5px;
+	color: #F57224;
+	border: 1px solid #F57224;
+	font-size: 14px;
+	transition: all .3s ease;
+}
+.newregisterform .form-group > a:hover{
+	background: #FEEADE;
+}
+.newregisterform .form-group a{
+	text-decoration: none;
+}
+.social-login{
+	/* display: flex; */
+	justify-content: space-between;
+}
+.newregisterform .form-group a.fb{
+	width: 100%;
+	background: #3B5998;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 6px 5px;
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+}
+.newregisterform .form-group a.go{
+	width: 100%;
+	background: #D34836;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 10px 5px;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+.newregisterform .form-group a.phone{
+	width: 100%;
+	background: #cb6b00;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 10px 5px;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+.newregisterform .form-group a.email{
+	width: 100%;
+	background: #0386e7;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding: 10px 5px;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+.newregisterform .form-group a i{
+	margin-right: 15px;
+
+}

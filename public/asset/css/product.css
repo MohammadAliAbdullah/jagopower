@@ -1,0 +1,121 @@
+.productdatbg{
+    padding: 30px 0;
+    background: #f3f3f3;
+}
+.productdet{
+
+    background: #fff;
+
+    padding: 5px;
+}
+.zoom-option > img{
+    width: 100% !important;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 0px 0px #ddd;
+    /* height: 320px; */
+    position: relative;
+}
+.xzoom-default img{
+    width: 100%;
+}
+.xzoom-thumbs a img{
+    width: 20%;
+    margin-top: 10px;
+    height: 80px;
+}
+.product-details-area .xzoom-thumbs{
+    text-align: left;
+}
+
+.xzoom-gallery, .xzoom-gallery2, .xzoom-gallery3, .xzoom-gallery4, .xzoom-gallery5{
+    margin-left: 0px !important;
+}
+.productdets{
+    background: #fff;
+    padding: 20px;
+}
+.productdets h3{
+    font-size: 24px;
+    line-height: 33px;
+}
+.proinfo p{
+
+    font-size: 13px;
+
+    line-height: 8px;
+}
+.productdets h4{
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+label.radio {
+    cursor: pointer;
+}
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+label.radio span {
+    padding: 2px 9px;
+    border: 2px solid #e4672f;
+    display: inline-block;
+    color: #e4672f;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+label.color input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+label.color span {
+    padding: 2px 9px;
+    /* border: 1px solid #e4672f; */
+    display: inline-block;
+    color: #e4672f;
+    border-radius: 50%;
+    /* text-transform: uppercase; */
+    background: #fff;
+    width: 30px;
+    height: 30px;
+}
+.quantity{
+
+}
+.cart {
+    background: #e4672f;
+    color: #fff;
+    border-radius: 6px;
+}
+.likeprod{
+    padding: 30px 0;
+    background: #fff;
+}
+.related{
+    padding: 30px 0;
+    background: #f3f2f2;
+}
+.details{
+    padding: 30px 0;
+}
+.producttab{
+    background: #fff;
+}
+.product-item {
+    background: #efefef;
+    margin-bottom: 25px;
+    border: 1px solid #e4672f;
+    height: 273px;
+}
+.rooms img {
+    height: 200px;
+}

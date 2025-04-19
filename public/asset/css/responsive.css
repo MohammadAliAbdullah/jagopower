@@ -1,0 +1,222 @@
+@media all and (max-width:991px){
+
+}
+@media all and (max-width:767px){
+
+}
+
+@media all and (max-width:540px){
+
+}
+@media all and (max-width:500px){
+    .cshoping a{
+        font-size: 6px !important;
+    }
+    .catbtn{
+        color: #fff;
+        font-size: 10px;
+    }
+    .table-light th, .table-light td, .table-light thead th, .table-light tbody + tbody{
+        font-size: 10px !important;
+    }
+    .cartt{
+        width: 80px !important;
+    }
+    .align-middle{
+        font-size: 12px;
+    }
+    .algimg{
+        display: none !important;
+    }
+    .searchbg{
+        display: none;
+    }
+    /*.header-menu{*/
+    /*    display: none;*/
+    /*}*/
+    .headtopbg{
+        display: none !important;
+    }
+    .shopbg ul li a{
+        margin-bottom: 6px;
+        float: left;
+        padding: 5px 2px;
+        font-size: 11px;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .logo a{
+        display: none;
+    }
+    .headerright{
+        display: none;
+    }
+    .slidebg{
+        padding-top: 97px !important;
+    }
+    .carousel-item{
+        height: 160px;
+    }
+    .carousel-item img{
+        height: 160px;
+    }
+    .carousel {
+        margin-bottom: 2rem;
+        z-index: -1;
+    }
+    .banar1{
+        display: none;
+    }
+    .banar1{
+        display: none;
+    }
+    .banar1{
+        display: none;
+    }
+    .productsss img {
+        height: 177px;
+    }
+    .banartopbg {
+        padding: 1px 0;
+    }
+    .productbg {
+        background: #ffffff;
+        padding: 1px 0;
+    }
+    /*.searchbg{*/
+    /*    display: none;*/
+    /*}*/
+    /*Menu*/
+    /*.navbar{*/
+    /*    display: none;*/
+    /*}*/
+    .navbar-demo  button.menu-btn {
+        position: absolute;
+        top: -16px;
+        /* right: 0; */
+        background-color: unset;
+        border: 0;
+        font-size: 34px;
+        display:block;
+        padding: 23px;
+        color: #f00;
+        outline: none;
+    }
+    .navbar-demo{
+        height:100%;
+        z-index: 999;
+    }
+    .navbar-demo .nav-bar {
+        left: -950px;
+        background-color: #000000d9;
+        transition: 1s;
+        height: 100%;
+    }
+
+    .navbar-demo.open-nav  .nav-bar{
+        left: 0;
+        width: 100%;
+        transition: left 0.5s;
+        height: auto;
+    }
+
+    .navbar-demo .nav-bar ul li a {
+        display: block;
+        color: #fff;
+    }
+    .navbar-demo.open-nav button.menu-btn i:before {
+        content: '\f00d ';
+    }
+    .navbar-demo {
+        display:block !important;
+    }
+
+    .mlogo {
+        width: 100%;
+        height: 40px;
+    }
+    .mlogo img {
+        /* width: 100%; */
+        /* height: 53px; */
+        /* margin-left: 151px; */
+        /* margin-top: 3px; */
+    }
+    #header-area {
+        width: 100%;
+        height: 60px;
+        background-color: black;
+    }
+
+    .usercom {
+        font-size: 24px;
+        color: #fff;
+        width: 90%;
+        height: 30px;
+        margin-left: 134px;
+        margin-top: -25px;
+    }
+    .cartcom{
+        font-size: 24px;
+        color: #fff;
+        /* width: 100%; */
+        /* height: 30px; */
+        /* margin-left: 251px; */
+        margin-top: -29px;
+        margin-right: 5px;
+    }
+
+    .usercom a {
+        padding: 0 10px;
+        color: #fff;
+    }
+
+    .usercom i, .cartcom i{
+        font-size: 15px;
+    }
+
+    .cartcom span{
+        font-size: 15px;
+    }
+
+    .cartcom a {
+        padding: 0 10px;
+        color: #fff;
+    }
+    .breadcrumbbg h1{
+        padding-top: 38px;
+    }
+    .tab-pane p{
+        font-size: 13px !important;
+        line-height: 16px;
+    }
+    .producttab a{
+        padding: 10px !important;
+    }
+    .productdets h4 {
+        font-size: 15px !important;
+    }
+    .productdets h3 {
+        font-size: 18px !important;
+        line-height: 25px !important;
+    }
+    .contact-address p {
+        line-height: 18px;
+    }
+}
+
+@media all and (max-width: 400px){
+    .headtopbg{
+        display: none !important;
+    }
+    .logo a{
+        display: none;
+    }
+    /*.headerright{*/
+    /*    display: none;*/
+    /*}*/
+    .search {
+        background: #000b16;
+        padding-top: 7px;
+    }
+}

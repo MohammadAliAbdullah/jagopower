@@ -1,0 +1,12 @@
+{
+    "createURL": "https://checkout.sandbox.bka.sh/v1.2.0-beta/checkout/payment/create",
+    "executeURL": "https://checkout.sandbox.bka.sh/v1.2.0-beta/checkout/payment/execute/",
+    "tokenURL": "https://checkout.sandbox.bka.sh/v1.2.0-beta/checkout/token/grant",
+    "script": "https://scripts.sandbox.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout-sandbox.js",
+    "app_key": "5tunt4masn6pv2hnvte1sb5n3j",
+    "proxy": "",
+    "app_secret": "1vggbqd4hqk9g96o9rrrp2jftvek578v7d2bnerim12a87dbrrka",
+    "username": "sandboxTestUser",
+    "password": "hWD@8vtzw0",
+    "token": "eyJraWQiOiJmalhJQmwxclFUXC9hM215MG9ScXpEdVZZWk5KXC9qRTNJOFBaeGZUY3hlamc9IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJiM2Q4OGVkZC0xNzc2LTRhMjEtYWZlMi0zN2FkZTk3NzEyZDMiLCJhdWQiOiI1dHVudDRtYXNuNnB2MmhudnRlMXNiNW4zaiIsImV2ZW50X2lkIjoiZWUxZTVmMjYtNzA2ZS00NWVhLTljYTktNDMzMTliYmQ0OWY1IiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE2MDM2NTE0MzEsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9rZjVCU05vUGUiLCJjb2duaXRvOnVzZXJuYW1lIjoic2FuZGJveFRlc3RVc2VyIiwiZXhwIjoxNjAzNjU1MDMxLCJpYXQiOjE2MDM2NTE0MzF9.gD-4XgckobKd3uoS1h4xPW45tkeTiCC7F27F3viMBv3TwDCQENbLeUmlaq0k-ikiy8fnbkg_1sXd2e2Ng9jgEYs5zYhQwl3og4VxvZ-7BIAkSvHqecx5KKs496A-3NdhMJcZQuxAKAHkvCLvTVWTFK6c0XeBw30jrnty0zC99tcTrABKBM47ew3W068f5z834giD8gzDQ7JnMNhmUJEwdV6murwziCc-9ibeQ6YZQdWaIV3D_PBrisTrYvTyT5zXgUiq_N0v_Uiz-W3WYlDBwdZb6uJBW7r_Y7FZnYkhJ9toL3UWqauqPouo0VrnQKHWUG01wJga7D3exJKiKwsX8A"
+}

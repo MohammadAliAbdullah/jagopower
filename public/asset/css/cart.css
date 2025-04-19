@@ -1,0 +1,32 @@
+.cartbg{
+	padding: 30px 0;
+	background: #f3f3f3;
+}
+
+.sidebarcart{
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.sidebarcart input{
+	border: 1px solid #ccc !important;
+}
+
+.btn-primary {
+    color: #212529;
+    background-color: #e4672f !important;
+    border-color: #e4672f !important;
+    
+}
+.btn.btn-primary{
+	color: #fff !important;
+}
+button.btn.btn-block.btn-primary.font-weight-bold.my-3.py-3 {}
+.table.table-borderless thead tr, .table.table-borderless tbody tr:not(:last-child) {
+   border-bottom: none !important;
+}
+
+.table.table-borderless thead tr{
+	background: #e4672f;
+	color: #fff;
+}
