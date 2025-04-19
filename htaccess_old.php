@@ -4,8 +4,7 @@
     </IfModule>
 
     RewriteEngine On
-    #RewriteBase /jagopower/ ## extra line ##
-    
+    RewriteBase /
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
