@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="form-group form-check">
                                         <input type="checkbox" name="rememberme" class="form-check-input" id="exampleCheck1" checked>
-                                        <label class="form-check-label" for="exampleCheck1">I agree to Jago Power Ltd <a
+                                        <label class="form-check-label" for="exampleCheck1">I agree to Femina Lightings Ltd <a
                                                     href="">Terms of Use</a> and <a href="">Privacy Policy</a></label>
                                     </div>
                                     <div class="form-group">
