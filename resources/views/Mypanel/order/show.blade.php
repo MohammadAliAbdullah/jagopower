@@ -2,9 +2,7 @@
 
 @section('content')
     <!-- Breadcrumb Start -->
-    <div class="breadcrumbbg" style="background: linear-gradient(
-      rgb(8 8 8 / 56%), rgb(40 40 40 / 51%)
-    ), url({{ asset('public/asset') }}/img/bg.jpg);">
+    <div class="breadcrumbbg">
         <div class="container">
             <div class="row">
                 <div class="col-12">

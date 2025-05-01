@@ -2,27 +2,21 @@
 
 @section('content')
 	<!-- Breadcrumb Start -->
-	<div class="breadcrumbbg" style="background: linear-gradient(
-      rgb(8 8 8 / 56%), rgb(40 40 40 / 51%)
-    ), url({{ asset('public/asset') }}/img/bg.jpg);">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<nav class="breadcrumb bg-transparent">
-						<a class="breadcrumb-item" href="#">Home <i class="fa fa-angle-right"></i></a>
-						<a class="breadcrumb-item" href="#">Shop <i class="fa fa-angle-right"></i></a>
-						<span class="breadcrumb-item">Shop Detail</span>
-					</nav>
-					<h1 class="text-center">Sign In</h1>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="breadcrumbbg">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <nav class="breadcrumb bg-transparent">
+                        <a class="breadcrumb-item" href="#">Home <i class="fa fa-angle-right"></i></a>
+                        <a class="breadcrumb-item" href="#">Shop <i class="fa fa-angle-right"></i></a>
+                        <span class="breadcrumb-title">Sign In</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 	<!-- Breadcrumb End -->
-
-
 	<!-- register part start-->
-
 	<div class="content-section registerbox section-padding">
 		<div class="container">
 			<div class="row">
@@ -31,7 +25,6 @@
 					</div>
 				</div>
 			</div>
-
 
 			<div class="row">
 				<div class="offset-md-2 col-md-8">

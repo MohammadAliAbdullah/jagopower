@@ -1,10 +1,56 @@
-.breadcrumbbg{
-	background: linear-gradient(
-      rgb(8 8 8 / 56%), rgb(40 40 40 / 51%) 
-    ), url(../img/bg.jpg);
-	padding: 20px 0;
-	height: 264px;
+
+/* start breadcrumb */
+.breadcrumbbg {
+    height: 50px;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.breadcrumb-item i {
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #aaa;
+}
+
+.breadcrumb-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.breadcrumb-item {
+    font-weight: 500;
+    /* Default for links */
+    color: #6c757d;
+}
+
+.breadcrumb-item:last-child {
+    font-weight: 400;
+    /* Regular weight for the last item */
+    color: #999;
+    /* Optional: make it slightly lighter */
+}
+/* end breadcrumb */
 
 .categorybg{
 	background: #f1f1f1;

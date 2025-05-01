@@ -2,16 +2,15 @@
 
 @section('content')
     <!-- Breadcrumb Start -->
-    <div class="breadcrumbbg" style="background: linear-gradient(rgb(8 8 8 / 56%), rgb(40 40 40 / 51%)), url('{{ url('/') }}/public/images/{{ $about->background ?? 'background.png'}}'); background-size: cover;">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
+    <div class="breadcrumbbg">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-8">
                     <nav class="breadcrumb bg-transparent">
                         <a class="breadcrumb-item" href="#">Home <i class="fa fa-angle-right"></i></a>
                         <a class="breadcrumb-item" href="#">Page <i class="fa fa-angle-right"></i></a>
-                        <span class="breadcrumb-item">{{ $about->title }}</span>
+                        <span class="breadcrumb-title">{{ $about->title }}</span>
                     </nav>
-                    <h1 class="text-center">{{ $about->title }}</h1>
                 </div>
             </div>
         </div>
