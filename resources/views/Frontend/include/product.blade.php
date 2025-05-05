@@ -16,7 +16,7 @@
             {!! Form::hidden('slug', $product->slug) !!}
             <button class="btn btn-outline-dark btn-square"><i class="fa fa-shopping-cart"></i></button>
             {!! Form::close() !!}
-            <a class="btn btn-outline-dark btn-square viewProductDetails"><i class="far fa-eye"></i></a>
+            <a class="btn btn-outline-dark btn-square viewProductDetails" data-url="{{ route('product_quick_view_details', ['id' => $product->slug]) }}"><i class="far fa-eye"></i></a>
         </div>
     </div>
     <div class="productdetails">

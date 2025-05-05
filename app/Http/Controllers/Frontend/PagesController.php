@@ -200,6 +200,30 @@ class PagesController extends Controller
         $other_products = Product::where('category_id', $product->category_id)->take(5)->get();
         return view("Frontend.simple_product", compact('similar_products','product', 'gallery', 'reviews','other_products'));
     }
+    public function product_quick_view_details($id=NULL)
+    {
+//        $product=cache()->remember('product-pdeteails', 60*60*24, function() use($id){
+//            return Product::where('slug', $id)->first();
+//        });
+//        $pid=$product->id;
+//        $pcat=$product->category_id;
+//        $reviews=cache()->remember('reviews-pdeteails', 60*60*24, function() use($pid){
+//            return Review::where('product_id', $pid)->where('status','Active')->get();
+//        });
+//        $similar_products=cache()->remember('similar_products-pdeteails', 60*60*24, function() use($pcat){
+//            return Product::where('category_id', $pcat)->take(5)->get();
+//        });
+//        $other_products=cache()->remember('other_products-pdeteails', 60*60*24, function() use($pcat){
+//            return Product::where('category_id', $pcat)->take(5)->get();
+//        });
+        $product = Product::where('slug', $id)->first();
+        $reviews = Review::where('product_id', $product->id)->where('status','Active')->get();
+        $gallery = explode(',', $product->gallery);
+        //dd($product);
+        $similar_products = Product::where('category_id', $product->category_id)->take(5)->get();
+        $other_products = Product::where('category_id', $product->category_id)->take(5)->get();
+        return view("Frontend.product_quick_view", compact('similar_products','product', 'gallery', 'reviews','other_products'));
+    }
 
     public function review_store(Request $request)
     {
