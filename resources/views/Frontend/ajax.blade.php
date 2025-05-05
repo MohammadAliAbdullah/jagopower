@@ -18,7 +18,7 @@
                     {!! Form::hidden('slug', $recent->slug) !!}
                     <button class="btn btn-outline-dark btn-square"><i class="fa fa-shopping-cart"></i></button>
                     {!! Form::close() !!}
-                    <a class="btn btn-outline-dark btn-square" href="{{ route('product_details', ['id' => $recent->slug]) }}"><i class="far fa-eye"></i></a>
+                    <a class="btn btn-outline-dark btn-square viewProductDetails" href="{{ route('product_details', ['id' => $recent->slug]) }}"><i class="far fa-eye"></i></a>
                 </div>
             </div>
             <div class="productdetails">

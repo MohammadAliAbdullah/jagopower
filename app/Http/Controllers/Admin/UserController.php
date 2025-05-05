@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Madmin;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
@@ -12,7 +13,7 @@ class UserController extends Controller
 {
     public function __construct()
     {
-       // $this->middleware('madmin');
+        // $this->middleware('madmin');
     }
     /**
      * Display a listing of the resource.
@@ -21,8 +22,15 @@ class UserController extends Controller
      */
     public function index()
     {
-        $values=Madmin::where('id','!=',1)->get();
-        return view('Admin.User.index',compact('values'));
+        $loggedInUser = Auth::guard('madmin')->user();
+        $roleId = $loggedInUser->role_id;
+        if ($roleId == 1) {
+            $values = Madmin::all();
+        }else{
+            $values = Madmin::where('id', $loggedInUser->id)->get();
+        }
+        // dd(Auth::guard('madmin')->user()->role_id);
+        return view('Admin.User.index', compact('values'));
     }
 
     /**
@@ -43,14 +51,14 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $input=$request->all();
-        $data['name']=$input['name'];
-        $data['email']=$input['email'];
-        $data['password']=Hash::make($input['password']);
+        $input = $request->all();
+        $data['name'] = $input['name'];
+        $data['email'] = $input['email'];
+        $data['password'] = Hash::make($input['password']);
         //$data['role_id']=$input['role_id'];
-        $data['status']=$input['status'];
+        $data['status'] = $input['status'];
         Madmin::create($data);
-        Session::flash('status','Admin User has been sucessfully add');
+        Session::flash('status', 'Admin User has been sucessfully add');
         return redirect()->route('madmin.adminuser.index');
     }
 
@@ -73,8 +81,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $value=Madmin::findOrFail($id);
-        return view('Admin.User.edit',compact('value'));
+        $value = Madmin::findOrFail($id);
+        return view('Admin.User.edit', compact('value'));
     }
 
     /**
@@ -86,15 +94,15 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $value=Madmin::findOrFail($id);
-        $input=$request->all();
-        $data['name']=$input['name'];
-        $data['email']=$input['email'];
-        $data['password']=Hash::make($input['passwords']);
+        $value = Madmin::findOrFail($id);
+        $input = $request->all();
+        $data['name'] = $input['name'];
+        $data['email'] = $input['email'];
+        $data['password'] = Hash::make($input['passwords']);
         //$data['role_id']=$input['role_id'];
-        $data['status']=$input['status'];
+        $data['status'] = $input['status'];
         $value->update($data);
-        Session::flash('status','Admin User has been sucessfully Update!!');
+        Session::flash('status', 'Admin User has been sucessfully Update!!');
         return redirect()->route('madmin.adminuser.index');
     }
 
@@ -106,9 +114,9 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $value=Madmin::findOrFail($id);
+        $value = Madmin::findOrFail($id);
         $value->delete();
-        Session::flash('status','Admin User has been sucessfully Delete!!');
+        Session::flash('status', 'Admin User has been sucessfully Delete!!');
         return redirect()->route('madmin.adminuser.index');
     }
 }
