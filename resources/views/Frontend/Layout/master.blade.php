@@ -35,10 +35,12 @@
 <body>
     @include('Frontend.Layout.header')
 
+    
+
+
+
     @yield('content')
-
     @include('Frontend.Layout.footer')
-
     <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -66,34 +68,13 @@
     <!-- Template Javascript -->
     <script src="{{ asset('public') }}/asset/js/main.js"></script>
     @yield('script')
-    <script>
-        $(document).on('click', '.viewProductDetails', function() {
-            const url = $(this).data('url');
-            // Optional: Show loading indicator
-            $('#modalContent').html('<p class="text-center">Loading...</p>');
-
-            $.ajax({
-                url: url,
-                type: 'GET',
-                success: function(data) {
-                    $('#modalContent').html(data);
-                    $('#productModal').modal('show');
-                },
-                error: function() {
-                    $('#modalContent').html(
-                        '<p class="text-danger">Failed to load product details.</p>');
-                }
-            });
-        });
-    </script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('.menu-btn').click(function(event) {
                 $('.navbar-demo').toggleClass('open-nav');
             });
         });
-    </script>
-    <script type="text/javascript">
+
         $(document).ready(function() {
             $('.navbar-light .dmenu').hover(function() {
                 $(this).find('.sm-menu').first().stop(true, true).slideDown(1);
@@ -101,9 +82,7 @@
                 $(this).find('.sm-menu').first().stop(true, true).slideUp(1)
             });
         });
-    </script>
-    <!-- Meta Pixel Code -->
-    <script>
+
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
             n = f.fbq = function() {
@@ -128,7 +107,27 @@
     <noscript>
         <img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1619859908827032&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
 </body>
 
 </html>
+
+<script>
+    $(document).on('click', '.viewProductDetails', function() {
+        const url = $(this).data('url');
+        // Optional: Show loading indicator
+        $('#modalContent').html('<p class="text-center">Loading...</p>');
+
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function(data) {
+                $('#modalContent').html(data);
+                $('#productModal').modal('show');
+            },
+            error: function() {
+                $('#modalContent').html(
+                    '<p class="text-danger">Failed to load product details.</p>');
+            }
+        });
+    });
+</script>
