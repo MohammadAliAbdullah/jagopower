@@ -30,15 +30,18 @@
     <link href="{{ asset('public') }}/asset/css/style.css" rel="stylesheet">
     @yield('style')
     <link href="{{ asset('public') }}/asset/css/responsive.css" rel="stylesheet">
+    <style>
+        #scrollTop {
+            display: none;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 99;
+        }
+    </style>
 </head>
-
 <body>
     @include('Frontend.Layout.header')
-
-    
-
-
-
     @yield('content')
     @include('Frontend.Layout.footer')
     <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -57,7 +60,7 @@
         </div>
     </div>
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn btn-primary" id="scrollTop"><i class="fa fa-angle-double-up"></i></a>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
@@ -112,21 +115,40 @@
 </html>
 
 <script>
-    $(document).on('click', '.viewProductDetails', function() {
-        const url = $(this).data('url');
-        // Optional: Show loading indicator
-        $('#modalContent').html('<p class="text-center">Loading...</p>');
+    $(document).ready(function() {
+        $(document).on('click', '.viewProductDetails', function() {
+            const url = $(this).data('url');
+            // Optional: Show loading indicator
+            $('#modalContent').html('<p class="text-center">Loading...</p>');
 
-        $.ajax({
-            url: url,
-            type: 'GET',
-            success: function(data) {
-                $('#modalContent').html(data);
-                $('#productModal').modal('show');
-            },
-            error: function() {
-                $('#modalContent').html(
-                    '<p class="text-danger">Failed to load product details.</p>');
+            $.ajax({
+                url: url,
+                type: 'GET',
+                success: function(data) {
+                    $('#modalContent').html(data);
+                    $('#productModal').modal('show');
+                },
+                error: function() {
+                    $('#modalContent').html(
+                        '<p class="text-danger">Failed to load product details.</p>');
+                }
+            });
+        });
+
+        // Scroll to top on click
+        $('#scrollTop').click(function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 'slow');
+        });
+
+        // Show/hide button on scroll
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('#scrollTop').fadeIn();
+            } else {
+                $('#scrollTop').fadeOut();
             }
         });
     });

@@ -1,3 +1,9 @@
+@php
+    $hotline = contacth()->hotline;
+    // Remove any non-digit characters and convert to international format
+    $cleanHotline = preg_replace('/\D/', '', $hotline);
+    $whatsappNumber = '880' . ltrim($cleanHotline, '0');
+@endphp
 <div class="position-fixed d-flex flex-column align-items-center"
     style="top: 50%; right: 1rem; transform: translateY(-50%); z-index: 1050; width: 5rem;">
 
@@ -17,16 +23,9 @@
             {{ $cartCount }}
         </span>
     </div>
-    
+
     {{-- WhatsApp Button --}}
     <div class="position-relative mb-3">
-        @php
-            $hotline = contacth()->hotline;
-            // Remove any non-digit characters and convert to international format
-            $cleanHotline = preg_replace('/\D/', '', $hotline);
-            $whatsappNumber = '880' . ltrim($cleanHotline, '0');
-        @endphp
-
         <a href="https://wa.me/{{ $whatsappNumber }}" target="_blank">
             <button type="button" class="btn btn-success d-flex align-items-center justify-content-center p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -38,9 +37,9 @@
         </a>
     </div>
 
-    {{-- Messenger Button --}}
+    {{-- Messenger Button https://www.facebook.com/profile.php?id=61557392113538 --}}
     <div class="position-relative">
-        <a href="https://m.me/maabdullah07" target="_blank">
+        <a href="https://m.me/61557392113538" target="_blank">
             <button type="button" class="btn btn-info d-flex align-items-center justify-content-center p-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                     viewBox="0 0 24 24">
@@ -59,13 +58,6 @@
                 <div class="headtop">
                     <ul>
                         <li>
-                            @php
-                                $hotline = contacth()->hotline;
-                                // Remove any non-digit characters and convert to international format
-                                $cleanHotline = preg_replace('/\D/', '', $hotline);
-                                $whatsappNumber = '880' . ltrim($cleanHotline, '0');
-                            @endphp
-
                             <a href="https://wa.me/{{ $whatsappNumber }}" target="_blank"
                                 class="fw-bold text-white text-decoration-none">
                                 <i class="fab fa-whatsapp me-1"></i> {{ $hotline }}

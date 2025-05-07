@@ -41,7 +41,7 @@
                                         <th>SI</th>
                                         <th>Name</th>
                                         <th>Email</th>
-                                        {{--                                    <th>Role</th> --}}
+                                        <th>Role</th>
                                         <th>Status</th>
                                         <th>Date</th>
                                         <th>Action</th>
@@ -53,9 +53,9 @@
                                             <td>
                                                 {{ $value->email }}
                                             </td>
-                                            {{--                                        <td> --}}
-                                            {{--                                           {{ $value->role_id }} --}}
-                                            {{--                                        </td> --}}
+                                            <td>
+                                                {{ $value->role_id == 1 ? 'Super Admin' : 'Admin' }}
+                                            </td>
                                             <td>{{ $value->status }}</td>
                                             <td>{{ date('d-m-Y', strtotime($value->created_at)) }}</td>
 

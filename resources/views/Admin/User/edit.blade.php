@@ -42,10 +42,8 @@
                                             {!! Form::text('name', null, [
                                                 'class' => 'form-control col-sm-6',
                                                 'id' => 'receiver',
-                                                'required',
-                                                ($value->id == 1 ? 'readonly' : '') => ($value->id == 1 ? 'readonly' : '')
+                                                'required'
                                             ]) !!}
-
                                         </div>
                                     </div>
 
