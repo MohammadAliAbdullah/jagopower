@@ -40,6 +40,7 @@
         }
     </style>
 </head>
+
 <body>
     @include('Frontend.Layout.header')
     @yield('content')
@@ -127,6 +128,10 @@
                 success: function(data) {
                     $('#modalContent').html(data);
                     $('#productModal').modal('show');
+                    // 
+                    setTimeout(function() {
+                        $('.xzoom, .xzoom-gallery').xzoom();
+                    }, 500);
                 },
                 error: function() {
                     $('#modalContent').html(
@@ -134,6 +139,17 @@
                 }
             });
         });
+        $('#productModal').on('hidden.bs.modal', function() {
+            // Properly destroy xZoom instance
+            let $zoomImage = $('#xzoom-default');
+            if ($zoomImage.data('xzoom')) {
+                $zoomImage.data('xzoom').destroy();
+            }
+
+            // Remove remaining preview DOM elements
+            $('.xzoom-preview, .xzoom-lens, .xzoom-loading').remove();
+        });
+
 
         // Scroll to top on click
         $('#scrollTop').click(function(e) {

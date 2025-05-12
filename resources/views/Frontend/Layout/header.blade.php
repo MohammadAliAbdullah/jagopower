@@ -5,30 +5,27 @@
     $whatsappNumber = '880' . ltrim($cleanHotline, '0');
 @endphp
 <div class="position-fixed d-flex flex-column align-items-center"
-    style="top: 50%; right: 1rem; transform: translateY(-50%); z-index: 1050; width: 5rem;">
+    style="top: 80%; right: 1rem; transform: translateY(-50%); z-index: 1050; width: 5rem;">
 
     {{-- Cart Button --}}
+    {{-- Phone Call Button --}}
     <div class="position-relative mb-3">
-        <a href="#">
-            <button type="button" class="btn btn-primary d-flex align-items-center justify-content-center p-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+        <a href="tel:{{ $hotline }}">
+            <button type="button" class="btn btn-dark d-flex align-items-center justify-content-center p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                     viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                        d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z"
-                        clip-rule="evenodd" />
+                    <path
+                        d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.02-.24 11.72 11.72 0 003.68.59c.55 0 1 .45 1 1v3.5a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5c.55 0 1 .45 1 1 0 1.28.2 2.53.59 3.68a1.003 1.003 0 01-.24 1.02l-2.23 2.09z" />
                 </svg>
             </button>
         </a>
-        <span class="badge badge-danger position-absolute" style="top: -0.5rem; right: -0.5rem;">
-            {{ $cartCount }}
-        </span>
     </div>
 
     {{-- WhatsApp Button --}}
     <div class="position-relative mb-3">
         <a href="https://wa.me/{{ $whatsappNumber }}" target="_blank">
             <button type="button" class="btn btn-success d-flex align-items-center justify-content-center p-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                     viewBox="0 0 24 24">
                     <path
                         d="M12 2.25c-5.376 0-9.75 4.373-9.75 9.75 0 1.716.446 3.397 1.292 4.883L2.25 21.75l5.086-1.266A9.704 9.704 0 0012 21.75c5.376 0 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25zm.007 17.25a7.49 7.49 0 01-3.832-1.062l-.273-.162-3.012.75.77-2.933-.177-.3a7.479 7.479 0 1113.497-1.031 7.49 7.49 0 01-7.06 4.738zm4.03-5.384c-.22-.111-1.293-.637-1.494-.71-.201-.074-.348-.111-.494.111-.148.222-.567.71-.696.857-.129.148-.258.166-.478.056-.222-.111-.936-.344-1.783-1.097-.659-.588-1.103-1.314-1.232-1.535-.13-.222-.014-.342.097-.453.1-.099.222-.258.333-.388.112-.13.149-.222.224-.37.074-.148.037-.277-.019-.388-.057-.111-.494-1.193-.677-1.638-.18-.434-.362-.374-.494-.38a1.233 1.233 0 00-.423-.008c-.146.018-.38.055-.58.277a2.444 2.444 0 00-.76 1.829c0 1.078.781 2.118.89 2.264.111.148 1.536 2.348 3.723 3.186.521.201.926.32 1.242.41.522.166.996.143 1.37.087.418-.062 1.293-.527 1.476-1.036.184-.508.184-.944.129-1.036-.055-.093-.203-.148-.423-.26z" />
@@ -41,7 +38,7 @@
     <div class="position-relative">
         <a href="https://m.me/61557392113538" target="_blank">
             <button type="button" class="btn btn-info d-flex align-items-center justify-content-center p-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                     viewBox="0 0 24 24">
                     <path
                         d="M12 2.25c-5.376 0-9.75 4.373-9.75 9.75 0 1.92.573 3.758 1.65 5.325L2.25 21.75l4.917-1.617A9.699 9.699 0 0012 21.75c5.376 0 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25zm.653 12.516l-2.183-2.321-4.068 2.321 4.743-5.244 2.207 2.321 4.043-2.321-4.742 5.244z" />

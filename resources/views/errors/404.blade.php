@@ -164,9 +164,7 @@
         </div>
         <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
         <a href="/">home page</a>
-        <h4 style="color: red; font-size: 20px;">Website Design and Development By
-            <a href="https://my-softit.com" target="_blank" style="color:#101010; border: none;  font-size: 40px; text-shadow: 2px 2px 0 #0000ff, -2px -2px 0 #ffab00, 0 0 8px #ff8700">MY SOFT IT</a>
-        </h4>
+        
     </div>
 </div>
 </body>

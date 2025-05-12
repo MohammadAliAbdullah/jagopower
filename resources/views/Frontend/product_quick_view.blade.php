@@ -1,3 +1,25 @@
+<style>
+    p>img {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .modal-body {
+        overflow: visible;
+    }
+
+    .img-zoom-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Fix xZoom z-index issue inside modal */
+    .xzoom-preview,
+    .xzoom-lens,
+    .xzoom-loading {
+        z-index: 1065 !important;
+    }
+</style>
 <div class="p-4">
     <div class="row">
         <!-- Product Image -->
@@ -124,12 +146,6 @@
 </div>
 
 <link rel="stylesheet" href="{{ asset('public') }}/asset/css/xzoom.css">
-<style>
-    p > img{
-        width: 300px !important;
-        height: 300px !important;
-    }
-</style>
 
 <script src="{{ asset('public') }}/asset/js/xzoom.min.js"></script>
 <script src="{{ asset('public') }}/asset/js/setup.js"></script>

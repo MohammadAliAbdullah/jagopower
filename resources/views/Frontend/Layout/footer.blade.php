@@ -124,8 +124,7 @@
                             <ul>
                                 @foreach (topbrand() as $topbrand)
                                     <li>
-                                        <a
-                                            href="{{ url('brands') }}/{{ $topbrand->slug }}">{{ $topbrand->title }}</a>
+                                        <a  href="{{ url('brands') }}/{{ $topbrand->slug }}">{{ $topbrand->title }}</a>
                                     </li>
                                 @endforeach
                             </ul>
