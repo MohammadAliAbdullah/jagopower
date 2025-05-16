@@ -42,11 +42,6 @@
             font-weight: bold;
             padding: 10px;
         }
-
-        #company-info {
-            /* margin-bottom: 05px; */
-        }
-
         .company-left {
             float: left;
             width: 50%;
@@ -118,8 +113,6 @@
             font-size: 13px;
             color: #444;
             padding: 10px 0;
-            /* background: #f5f5f5; */
-            /* border-top: 1px solid #ccc; */
         }
     </style>
 </head>
@@ -129,8 +122,7 @@
         <div id="company-info">
             <div class="company-left">
                 <img src="{{ asset('public/images/1695193114logo.png') }}" alt="Company Logo" height="44">
-                <h2> Femina
-                    Lighting</h2>
+                <h2> Femina Lightings</h2>
             </div>
             <div class="company-right">
                 <p>
@@ -139,7 +131,7 @@
                     <span style="margin-left: 20px;">Shop#46-47, Sector#03, Uttara, Dhaka</span><br>
 
                     <i class="fas fa-phone"></i>
-                    <span>09639117791</span><br>
+                    <span>01705210280</span><br>
 
                     <i class="fas fa-envelope"></i>
                     <span>info@jagopower.com</span><br>
